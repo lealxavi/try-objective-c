@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World! (Can you commit)?");
-    }
-    return 0;
+    void (^myFirstBlock)(NSString *) = ^(NSString *word){
+        NSLog(@"%@", word);
+    };
+    
+    myFirstBlock(@"Hello");
+    myFirstBlock(@"World");
+
 }
