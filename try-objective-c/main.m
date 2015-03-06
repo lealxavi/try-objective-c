@@ -9,11 +9,34 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    void (^myFirstBlock)(NSString *) = ^(NSString *word){
-        NSLog(@"%@", word);
-    };
     
-    myFirstBlock(@"Hello");
-    myFirstBlock(@"World");
+    NSString *firstName = @"Xavi ";
+    NSString *secondName  = @"Leal";
+    
+    NSLog(@"%@",[firstName stringByAppendingString:secondName]);
+    
+//    NSNumber *myDogsAge = @11;
+//    NSNumber *factor    = @7;
+//    
+//    NSUInteger result = [myDogsAge unsignedIntegerValue] * [factor unsignedIntegerValue];
+//    
+//    NSLog(@"Result is : %lu",result);
+    
+//    NSDictionary *apps = @{ @"Instacanvas" : @12 };
+    
+//    NSArray *elements = @[@"Xavi",@"Leal",@"Meseguer"];
+    
+//    NSLog(@"%@", [elements description]);
+    
+//    NSLog(@"%@ ",apps[@"Instacanvas"]);
+    
+//    NSLog(@"%lu", [@"Xavi" length]);
+    
+//    void (^myFirstBlock)(NSString *) = ^(NSString *word){
+//        NSLog(@"%@ ", word);
+//    };
+    
+//    myFirstBlock(@"Hello");
+//    myFirstBlock(@"World");
 
 }
